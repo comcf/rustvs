@@ -9,7 +9,7 @@
 
 	<ItemGroup>
 		<SourceFiles Include="ConsoleApp.rs;..\lib\library.rlib;..\lib\rary.rs"/>
-		<LibraryFiles Include="release\ConsoleApp.exe;release\ConsoleApp.rs;release\rary.rs;release\library.rlib;release\library.rlib;release\library.rlib" />
+		<LibraryFiles Include="release\ConsoleApp.exe;release\ConsoleApp.rs;release\library.rlib;release\rary.rs" />
 	</ItemGroup>
 
 	<Target Name="Build">
