@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) Daniel Giversen. All Rights reserved. -->
+<!-- Licenced under Proprietary License. See LICENSE.txt -->
+<Project DefaultTargets="Build;Rebuild;Clean" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <ProjectGuid>{4FB0E5C1-8FF0-4C17-8007-851E1404368A}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <SourceFiles Include="rary.rs" />
+    <LibraryFiles Include="release\rary.rs;release\library.rlib" />
+  </ItemGroup>
+  <Target Name="Build">
+    <Exec Command="ECHO Building dev" />
+    <Copy SourceFiles="@(SourceFiles)" DestinationFolder="debug" />
+    <Exec Command="rustc --crate-type=lib rary.rs --out-dir debug" />
+  </Target>
+  <Target Name="Rebuild">
+    <Exec Command="ECHO Rebuilding release" />
+    <Copy SourceFiles="@(SourceFiles)" DestinationFolder="release" />
+    <Exec Command="rustc --crate-type=lib rary.rs --out-dir release" />
+    <Copy SourceFiles="@(LibraryFiles)" DestinationFolder="..\lib" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="ECHO Cleaning project" />
+    <Exec Command="if exist debug rd /s /q debug" />
+    <Exec Command="if exist release rd /s /q release" />
+  </Target>
+</Project>

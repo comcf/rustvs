@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) Daniel Giversen. All Rights reserved. -->
+<!-- Licenced under Proprietary License. See LICENSE.txt -->
+<Project DefaultTargets="Build;Rebuild;Clean" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+
+  <PropertyGroup>
+    <ProjectGuid>{E1D54CA2-6C35-4372-BE4B-58ABA5DC907F}</ProjectGuid>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<SourceFiles Include="TestApp.rs;..\lib\library.rlib;..\lib\rary.rs"/>
+		<LibraryFiles Include="release\TestApp.exe;release\TestApp.rs;release\library.rlib;release\rary.rs" />
+	</ItemGroup>
+
+	<Target Name="Build">
+		<Exec Command="ECHO Building dev" />
+		<Copy SourceFiles="@(SourceFiles)" DestinationFolder="debug" />
+		<Exec Command="rustc --crate-type=bin TestApp.rs --extern trial=..\lib\library.rlib --out-dir debug" />
+	</Target>
+	
+	<Target Name="Rebuild">
+		<Exec Command="ECHO Rebuilding release" />
+		<Copy SourceFiles="@(SourceFiles)" DestinationFolder="release" />
+		<Exec Command="rustc --crate-type=bin TestApp.rs --extern trial=..\lib\library.rlib --out-dir release" />
+		<Copy SourceFiles="@(LibraryFiles)" DestinationFolder="..\build" />
+	</Target>
+	
+	<Target Name="Clean" >
+		<Exec Command="ECHO Cleaning project" />
+		<Exec Command="if exist debug rd /s /q debug" />
+		<Exec Command="if exist release rd /s /q release" />
+	</Target>
+	
+	
+</Project>

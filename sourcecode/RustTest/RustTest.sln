@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.rsproj", "{4FB0E5C1-8FF0-4C17-8007-851E1404368A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.rsproj", "{E1D54CA2-6C35-4372-BE4B-58ABA5DC907F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9E76CA0E-3324-42CD-8440-34AA8CB6BFFB}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\.gitignore = ..\..\.gitignore
+		..\..\LICENCE.txt = ..\..\LICENCE.txt
+		..\..\README.md = ..\..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FB0E5C1-8FF0-4C17-8007-851E1404368A}.Debug|x86.ActiveCfg = Debug|x86
+		{4FB0E5C1-8FF0-4C17-8007-851E1404368A}.Debug|x86.Build.0 = Debug|x86
+		{E1D54CA2-6C35-4372-BE4B-58ABA5DC907F}.Debug|x86.ActiveCfg = Debug|x86
+		{E1D54CA2-6C35-4372-BE4B-58ABA5DC907F}.Debug|x86.Build.0 = Debug|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DDA62CA-F5AD-4679-8281-562C426871DD}
+	EndGlobalSection
+EndGlobal

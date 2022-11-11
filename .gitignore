@@ -16,6 +16,17 @@
 /sourcecode/RustVS/RustLibrary/debug
 /sourcecode/RustVS/RustLibrary/obj
 /sourcecode/RustVS/RustLibrary/release
+/sourcecode/RustTest/.vs
+/sourcecode/RustTest/Test/.vs
+/sourcecode/RustTest/Test/bin
+/sourcecode/RustTest/Test/debug
+/sourcecode/RustTest/Test/obj
+/sourcecode/RustTest/Test/release
+/sourcecode/RustTest/Library/.vs
+/sourcecode/RustTest/Library/bin
+/sourcecode/RustTest/Library/debug
+/sourcecode/RustTest/Library/obj
+/sourcecode/RustTest/Library/release
 
 # Files
 **/*.lock
