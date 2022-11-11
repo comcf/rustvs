@@ -1,16 +1,16 @@
 # rustvs
-##Rust for Visual Studio 2022##
+## Rust for Visual Studio 2022
 
-###Templates###
+### Templates
 * Rust Console App
 * Rust Library
 * Rust Class
 
-###Projects###
+### Projects
 * RustConsole
 * RustLibrary
 
-###To DO###
+### To DO
 * MSIX-package with templates for Visual Studio Market Place
 * software development kit (SDK) for automation of rsproj-files and compiling 
 ** Atm. rsproj-files are edited manually
