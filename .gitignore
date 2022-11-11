@@ -6,14 +6,16 @@
 # Libraries
 /.vs
 /sourcecode/RustVS/.vs
-/sourcecode/RustVS/build
-/sourcecode/RustVS/lib
 /sourcecode/RustVS/RustConsole/.vs
 /sourcecode/RustVS/RustConsole/bin
+/sourcecode/RustVS/RustConsole/debug
 /sourcecode/RustVS/RustConsole/obj
+/sourcecode/RustVS/RustConsole/release
 /sourcecode/RustVS/RustLibrary/.vs
 /sourcecode/RustVS/RustLibrary/bin
+/sourcecode/RustVS/RustLibrary/debug
 /sourcecode/RustVS/RustLibrary/obj
+/sourcecode/RustVS/RustLibrary/release
 
 # Files
 **/*.lock
