@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RustConsole", "RustConsole\RustConsole.rsproj", "{8C978717-CB8B-408A-B06B-D97589C5CEF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C978717-CB8B-408A-B06B-D97589C5CEF2}.Debug|x64.ActiveCfg = Debug|x86
+		{8C978717-CB8B-408A-B06B-D97589C5CEF2}.Debug|x64.Build.0 = Debug|x86
+		{8C978717-CB8B-408A-B06B-D97589C5CEF2}.Release|x64.ActiveCfg = Debug|x86
+		{8C978717-CB8B-408A-B06B-D97589C5CEF2}.Release|x64.Build.0 = Debug|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1CDD4F3F-2773-43B1-B571-A5B7ABC4A6C7}
+	EndGlobalSection
+EndGlobal
